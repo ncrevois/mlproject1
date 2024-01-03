@@ -152,6 +152,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# system file created by macOS Finder to store custom attributes of a folder
+.DS_Store
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
