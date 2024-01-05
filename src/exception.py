@@ -1,5 +1,7 @@
 import sys 
 import logging
+from src.logger import logging 
+
 
 def error_message_detail(error, error_detail:sys):
     '''when an error is raised, 
@@ -17,3 +19,10 @@ class CustomException(Exception):   #CustomException class is inheriting the par
     
     def __str__(self): #when you print this, it will print the error_message
         return self.error_message
+
+if __name__ == "__main__": 
+    try:
+        a = 1/10 
+    except Exception as e: 
+        logging.info("Divide by zero")
+        raise CustomException(e,sys)
