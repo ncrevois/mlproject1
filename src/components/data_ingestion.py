@@ -1,21 +1,27 @@
 #read data from a main data source 
 #split the data into train and test 
 
-import os 
-import sys  #we will be using our CustomException
+import sys
+sys.path.insert(0, '/Users/nathaliecrevoisier/Documents/DataScience/mlproject1')
 
+
+import os 
+print("Current Working Directory:", os.getcwd())
+import sys  #we will be using our CustomException
 import pandas as pd 
 from sklearn.model_selection import train_test_split 
 from dataclasses import dataclass 
-from src.exception import CustomException
 from src.logger import logging
+from src.exception import CustomException
+
 
 @dataclass
 class DataIngestionConfig: 
     #inputs 
-    train_data_path: str = os.path.join('artifact', "train.csv")  #later on, the data ingestion will save the train.csv file in this path
-    test_data_path: str = os.path.join('artifact', "test.csv")
-    raw_data_path: str = os.path.join('artifact', "data.csv")
+    project_root = '/Users/nathaliecrevoisier/Documents/DataScience/mlproject1'
+    train_data_path: str = os.path.join(project_root, 'artifact', "train.csv")  #later on, the data ingestion will save the train.csv file in this path
+    test_data_path: str = os.path.join(project_root,'artifact', "test.csv")
+    raw_data_path: str = os.path.join(project_root,'artifact', "data.csv")
 
 class DataIngestion: 
     def __init__(self):
@@ -24,7 +30,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try: 
-            df = pd.read_csv('notebook/data/stud.csv') 
+            df = pd.read_csv('/Users/nathaliecrevoisier/Documents/DataScience/mlproject1/notebook/data/stud.csv') 
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok = True) #get the directory name of this path, if it already exists we keep the folder don't have to delete and re-create 
