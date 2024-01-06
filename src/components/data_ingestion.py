@@ -19,9 +19,9 @@ from src.exception import CustomException
 class DataIngestionConfig: 
     #inputs 
     project_root = '/Users/nathaliecrevoisier/Documents/DataScience/mlproject1'
-    train_data_path: str = os.path.join(project_root, 'artifact', "train.csv")  #later on, the data ingestion will save the train.csv file in this path
-    test_data_path: str = os.path.join(project_root,'artifact', "test.csv")
-    raw_data_path: str = os.path.join(project_root,'artifact', "data.csv")
+    train_data_path: str = os.path.join(project_root, 'artifacts', "train.csv")  #later on, the data ingestion will save the train.csv file in this path
+    test_data_path: str = os.path.join(project_root,'artifacts', "test.csv")
+    raw_data_path: str = os.path.join(project_root,'artifacts', "data.csv")
 
 class DataIngestion: 
     def __init__(self):
