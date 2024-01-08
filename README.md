@@ -1,7 +1,7 @@
 ## End to end ML project 
 
 Goal:
-- Train a ML model to predict student's performance (test scores) using features like gender, ethnicity, parental level of education, lunch and test preparation course. 
+- Train an ML model to predict student's performance (test scores) using features like gender, ethnicity, parental level of education, lunch and test preparation course. 
 - Work on an end to end ML project: 
     - data ingestion
     - feature engineering
