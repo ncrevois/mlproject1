@@ -8,6 +8,7 @@ Goal:
     - training multiple models
     - evaluate and pick the best model 
     - hyperparameters tuning 
+    - create a web application for the prediction pipeline using Flask Web APP 
     - deployement in AWS Cloud Using CI CD Pipelines 
     - deployement in Azure Cloud using Github Actions 
 
