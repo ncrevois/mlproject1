@@ -8,6 +8,7 @@ Goal:
     - training multiple models
     - evaluate and pick the best model 
     - hyperparameters tuning 
+    - create a web application for the prediction pipeline using Flask Web APP 
     - deployement in AWS Cloud Using CI CD Pipelines 
     - deployement in Azure Cloud using Github Actions 
 
@@ -15,4 +16,4 @@ Goal:
 
 Dataset Source - https://www.kaggle.com/datasets/spscientist/students-performance-in-exams?datasetId=74977
 
-This data consists of 8 column and 1000 rows. 
+This data consists of 8 columns and 1000 rows. 
